@@ -1,0 +1,24 @@
+### Send POST request with GraphQl body
+POST http://localhost:8080/books
+Content-Type: text/plain
+
+{
+  allBooks {
+    isn
+    title
+  }
+}
+
+
+### Send POST request with json body
+POST http://localhost:8080/books
+Content-Type: text/plain
+
+{
+  book(id: "123") {
+    isn
+    title
+    publisher
+    authors
+  }
+}
